@@ -39,9 +39,42 @@ public class Robot {
         
         Robot robot2 = new Robot("Jerry","Yellow",50);
         
+        Person person1 = new Person("Alice","aggresive",false);
+        Person person2 = new Person("Becky","talkative",true);
+        
         robot.introduceSelf();
         robot2.introduceSelf();
         
+        person1.robotOwned = robot ;
+        person2.robotOwned = robot2 ;
+        System.out.println("#################################");
+        person1.robotOwned.introduceSelf();
+        person2.robotOwned.introduceSelf();
+        
 }
+    
+}
+
+
+class Person {
+    
+    String name ;
+    String personality ;
+    boolean isSitting ;
+    Robot robotOwned ;
+    
+    public Person(String n , String p , boolean i){
+        this.name = n;
+        this.personality = p ;
+        this.isSitting = i ;
+    }
+    
+    void sitDown(){
+        this.isSitting = true ;
+        
+    }
+    void standUp(){
+        this.isSitting = false ;
+    }
     
 }
