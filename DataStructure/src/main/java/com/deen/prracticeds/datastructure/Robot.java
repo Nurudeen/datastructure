@@ -35,9 +35,12 @@ public class Robot {
     
     public static void main(String[] args) {
    
-        Robot robot = new Robot("Yellow Robot","Yellow",30);
+        Robot robot = new Robot("Tom","Yellow",30);
+        
+        Robot robot2 = new Robot("Jerry","Yellow",50);
         
         robot.introduceSelf();
+        robot2.introduceSelf();
         
 }
     
