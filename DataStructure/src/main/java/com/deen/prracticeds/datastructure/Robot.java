@@ -47,7 +47,7 @@ public class Robot {
         
         person1.robotOwned = robot ;
         person2.robotOwned = robot2 ;
-        System.out.println("#################################");
+        
         person1.robotOwned.introduceSelf();
         person2.robotOwned.introduceSelf();
         
